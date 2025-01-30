@@ -48,7 +48,7 @@ http://localhost:8989
 
 ### docker-hub
 https://hub.docker.com/r/modenaf360/gotty-docker/ (original image)  
-https://hub.docker.com/r/dremoochy/gotty-docker/
+https://hub.docker.com/r/dremoochy/gotty
 
 ## Reference
 [1].https://github.com/yudai/gotty  
