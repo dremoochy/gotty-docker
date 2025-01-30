@@ -1,17 +1,16 @@
-FROM ubuntu:latest as base
-LABEL maintainer="wingnut0310 <wingnut0310@gmail.com>"
-
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ARG GOTTY_TAG_VER=v1.0.1
-ARG GOTTY_ARCH=gotty_linux_amd64.tar.gz
-FROM base as fetch
-RUN apt-get -y update && \
-    apt-get install -y curl && \
+FROM ubuntu:latest
+LABEL maintainer="dremoochy, forked from hyeonsangjeon/gotty-docker"
+LABEL original-maintainer="wingnut0310 <wingnut0310@gmail.com>"
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV GOTTY_TAG_VER=v1.0.1
+ENV GOTTY_ARCH=gotty_linux_amd64.tar.gz
+RUN apt -y update && \
+    apt install -y curl && \
     curl -sLk https://github.com/yudai/gotty/releases/download/${GOTTY_TAG_VER}/${GOTTY_ARCH} \
-    | tar xzC /usr/local/bin && \
-    apt-get purge --auto-remove -y curl && \
-    apt-get clean && \
+    | tar xzvC /usr/local/bin && \
+    apt purge --auto-remove -y curl && \
+    apt clean && \
     rm -rf /var/lib/apt/lists*
 
 

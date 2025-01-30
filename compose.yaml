@@ -1,9 +1,7 @@
 name: my-gotty
 services:
   gotty:
-    build:
-      context: .
-      target: fetch
+    image: dremoochy/gotty:latest
     hostname: mygotty
     ports:
     - 8989:8080
