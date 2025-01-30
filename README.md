@@ -1,10 +1,11 @@
 Gotty Docker
 ===
-This example can be used to share the terminal using gotty[1] in the docker container with the 'latest' Ubuntu image. (Latest tested version : 24.04)
-
-Edit : Forked from hyeonsangjeon/gotty-docker[2] by dremoochy for testing and educational purposes.
-
-To try the example, you need to have Docker installed on your OS. And needed sudoers account permission[3]
+This example can be used to share the terminal using gotty[1] in the docker container with the 'latest' Ubuntu image.  
+(Latest tested version : 24.04)  
+  
+Edit : Forked from hyeonsangjeon/gotty-docker[2] by dremoochy for testing and educational purposes.  
+  
+To try the example, you need to have Docker installed on your OS. And needed sudoers account permission[3]  
 
 
 After docker installation, execute this command to bake a docker image in a terminal:
@@ -46,10 +47,10 @@ http://localhost:8989
 
 
 ### docker-hub
-https://hub.docker.com/r/modenaf360/gotty-docker/ (original image)
+https://hub.docker.com/r/modenaf360/gotty-docker/ (original image)  
 https://hub.docker.com/r/dremoochy/gotty-docker/
 
 ## Reference
 [1].https://github.com/yudai/gotty  
-[2].https://github.com/hyeonsangjeon/gotty-docker
+[2].https://github.com/hyeonsangjeon/gotty-docker  
 [3].https://docs.docker.com/engine/installation  
